@@ -12,11 +12,11 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 @SpringBootApplication
-@ComponentScan("com.register-sunat-hexagonal.*")
-@EntityScan("com.register-sunat-hexagonal.*")
-@EnableFeignClients("com.register-sunat-hexagonal.*")
+@ComponentScan("com.register_sunat_hexagonal.*")
+@EntityScan("com.register_sunat_hexagonal.*")
+@EnableFeignClients("com.register_sunat_hexagonal.*")
 @ImportAutoConfiguration({FeignAutoConfiguration.class})
-@EnableJpaRepositories("com.register-sunat-hexagonal.*")
+@EnableJpaRepositories("com.register_sunat_hexagonal.*")
 public class ApplicationLauncher {
     public static void main(String[] args) {
         SpringApplication.run(ApplicationLauncher.class,args);
